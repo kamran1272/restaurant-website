@@ -1,22 +1,24 @@
+import { withBasePath } from '../utils/sitePaths';
+
 const FOOD_IMAGES = [
-  '/img/f1.jpg',
-  '/img/f2.jpg',
-  '/img/f3.jpg',
-  '/img/f4.jpg',
-  '/img/f5.jpg',
-  '/img/f6.jpg',
-  '/img/f7.jpg',
-  '/img/f8.jpg',
-  '/img/f9.jpg',
+  withBasePath('/img/f1.jpg'),
+  withBasePath('/img/f2.jpg'),
+  withBasePath('/img/f3.jpg'),
+  withBasePath('/img/f4.jpg'),
+  withBasePath('/img/f5.jpg'),
+  withBasePath('/img/f6.jpg'),
+  withBasePath('/img/f7.jpg'),
+  withBasePath('/img/f8.jpg'),
+  withBasePath('/img/f9.jpg'),
 ];
 
 const RESTAURANT_IMAGES = [
-  '/img/r1.jpg',
-  '/img/r2.jpg',
-  '/img/r3.jpg',
-  '/img/r4.jpg',
-  '/img/r5.jpg',
-  '/img/r6.jpg',
+  withBasePath('/img/r1.jpg'),
+  withBasePath('/img/r2.jpg'),
+  withBasePath('/img/r3.jpg'),
+  withBasePath('/img/r4.jpg'),
+  withBasePath('/img/r5.jpg'),
+  withBasePath('/img/r6.jpg'),
 ];
 
 const DYNAMIC_TAGS = ['Popular', 'Chef Suggested', 'Family Favourite', 'Delivery Ready'];

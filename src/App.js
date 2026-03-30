@@ -10,6 +10,7 @@ import DeliveryPage from './pages/DeliveryPage';
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import UserPanelPage from './pages/UserPanelPage';
+import { BASE_PATH } from './utils/sitePaths';
 
 const NotFoundPage = () => (
   <section className="section page-shell">
@@ -75,7 +76,7 @@ const AppShell = () => {
 function App() {
   return (
     <StoreProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={BASE_PATH || '/'}>
         <AppShell />
       </BrowserRouter>
     </StoreProvider>

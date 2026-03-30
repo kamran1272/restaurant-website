@@ -1,4 +1,5 @@
 import React from 'react';
+import { withBasePath } from '../utils/sitePaths';
 
 const AboutUs = ({ highlights, stats }) => {
   return (
@@ -6,7 +7,7 @@ const AboutUs = ({ highlights, stats }) => {
       <div className="container story-layout">
         <div className="story-media reveal">
           <img
-            src="/img/r4.jpg"
+            src={withBasePath('/img/r4.jpg')}
             alt="Dining area at Baloch Restaurant"
             className="story-media__image"
           />

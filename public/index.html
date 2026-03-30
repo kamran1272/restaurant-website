@@ -54,9 +54,26 @@
         },
         "image": "%PUBLIC_URL%/img/f9.jpg",
         "priceRange": "Rs",
-        "hasMenu": "/menu",
+        "hasMenu": "%PUBLIC_URL%/menu",
         "acceptsReservations": "True"
       }
+    </script>
+    <script type="text/javascript">
+      (function (location) {
+        if (location.search[1] !== '/') {
+          return;
+        }
+
+        var decoded = location.search
+          .slice(1)
+          .split('&')
+          .map(function (segment) {
+            return segment.replace(/~and~/g, '&');
+          })
+          .join('?');
+
+        window.history.replaceState(null, null, location.pathname.slice(0, -1) + decoded + location.hash);
+      })(window.location);
     </script>
     <title>Baloch Restaurant | 100+ Pakistani Dishes, Delivery and Dining</title>
   </head>

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { buildAbsoluteUrl } from '../utils/sitePaths';
 
 const ROUTE_SEO = {
   '/': {
@@ -116,9 +117,8 @@ const SeoManager = () => {
   const seo = ROUTE_SEO[location.pathname] || ROUTE_SEO['/'];
 
   useEffect(() => {
-    const origin = window.location.origin || '';
-    const canonicalUrl = `${origin}${location.pathname}`;
-    const imageUrl = `${origin}${seo.image}`;
+    const canonicalUrl = buildAbsoluteUrl(location.pathname);
+    const imageUrl = buildAbsoluteUrl(seo.image);
 
     document.title = seo.title;
     upsertMeta('name', 'description', seo.description);

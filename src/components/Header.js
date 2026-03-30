@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useStore } from '../context/StoreContext';
+import { withBasePath } from '../utils/sitePaths';
 
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
@@ -67,7 +68,7 @@ const Header = () => {
       <div className="container">
         <div className={`header-surface ${isMenuOpen ? 'is-open' : ''}`}>
           <Link to="/" className="brand">
-            <img src="/img/r1.png" alt="Baloch Restaurant logo" className="brand-mark" />
+            <img src={withBasePath('/img/r1.png')} alt="Baloch Restaurant logo" className="brand-mark" />
             <div>
               <p className="brand-kicker">Baloch Restaurant</p>
               <p className="brand-copy">Pakistani dining, delivery, and guest operations in one refined platform.</p>

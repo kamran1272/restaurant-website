@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://baloch-restaurant.example/</loc>
+    <loc>https://kamran1272.github.io/restaurant-website/</loc>
   </url>
   <url>
-    <loc>https://baloch-restaurant.example/menu</loc>
+    <loc>https://kamran1272.github.io/restaurant-website/menu</loc>
   </url>
   <url>
-    <loc>https://baloch-restaurant.example/delivery</loc>
+    <loc>https://kamran1272.github.io/restaurant-website/delivery</loc>
   </url>
   <url>
-    <loc>https://baloch-restaurant.example/user</loc>
+    <loc>https://kamran1272.github.io/restaurant-website/user</loc>
   </url>
   <url>
-    <loc>https://baloch-restaurant.example/admin</loc>
+    <loc>https://kamran1272.github.io/restaurant-website/admin</loc>
   </url>
 </urlset>
