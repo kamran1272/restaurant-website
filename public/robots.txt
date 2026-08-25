@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kamran1272.github.io/restaurant-website/sitemap.xml

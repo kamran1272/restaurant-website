@@ -1,0 +1,17 @@
+{
+  "short_name": "Baloch",
+  "name": "Baloch Hospitality",
+  "icons": [
+    {
+      "src": "img/favicon.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    }
+  ],
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "theme_color": "#201714",
+  "background_color": "#f4ede3",
+  "description": "Hospitality destination for hotel stays, rooms, Pakistani dining, delivery, reservations, and guest services."
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/img/favicon.webp" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#201714" />
+    <meta
+      name="description"
+      content="Baloch Hospitality brings together hotel stays, rooms, Pakistani dining, local delivery, reservations, and guest services in Bhakkar."
+    />
+    <meta
+      name="keywords"
+      content="Baloch Hospitality, Bhakkar hotel, rooms, Pakistani dining, food delivery, BBQ, biryani, karahi, long stay, guest services"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Baloch Hospitality | Hotel, Rooms, Dining and Guest Services" />
+    <meta
+      property="og:description"
+      content="Discover hotel stays, rooms, Pakistani dining, local delivery, table reservations, and guest services in Bhakkar."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/img/f9.jpg" />
+    <meta property="og:site_name" content="Baloch Hospitality" />
+    <meta property="og:locale" content="en_PK" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Baloch Hospitality | Hotel, Rooms, Dining and Guest Services" />
+    <meta
+      name="twitter:description"
+      content="A local hospitality destination for hotel stays, rooms, Pakistani dining, delivery, and guest services."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/img/f9.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LodgingBusiness", "Restaurant"],
+        "name": "Baloch Hospitality",
+        "description": "Hotel stays, rooms, Pakistani dining, local delivery, and guest services in Bhakkar, Punjab, Pakistan.",
+        "servesCuisine": ["Pakistani", "BBQ", "Karahi", "Biryani"],
+        "telephone": "+92 346 0434728",
+        "email": "kamrankhama7@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Chak No 210/TDA",
+          "addressLocality": "Bhakkar",
+          "addressRegion": "Punjab",
+          "postalCode": "52300",
+          "addressCountry": "PK"
+        },
+        "image": "%PUBLIC_URL%/img/f9.jpg",
+        "priceRange": "Rs",
+        "hasMenu": "%PUBLIC_URL%/menu",
+        "acceptsReservations": "True"
+      }
+    </script>
+    <script type="text/javascript">
+      (function (location) {
+        if (location.search[1] !== '/') {
+          return;
+        }
+
+        var decoded = location.search
+          .slice(1)
+          .split('&')
+          .map(function (segment) {
+            return segment.replace(/~and~/g, '&');
+          })
+          .join('?');
+
+        window.history.replaceState(null, null, location.pathname.slice(0, -1) + decoded + location.hash);
+      })(window.location);
+    </script>
+    <title>Baloch Hospitality | Hotel, Rooms, Dining and Guest Services</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

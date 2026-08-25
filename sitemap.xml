@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kamran1272.github.io/restaurant-website/</loc>
+  </url>
+  <url>
+    <loc>https://kamran1272.github.io/restaurant-website/menu</loc>
+  </url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/rooms</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/rooms/single-room</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/rooms/double-room</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/rooms/triple-room</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/rooms/family-room</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/rooms/large-family-room</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/long-stay</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/international-guests</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/hotel-in-bhakkar</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/luxury-rooms-bhakkar</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/family-rooms-bhakkar</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/long-stay-accommodation-bhakkar</loc></url>
+  <url><loc>https://kamran1272.github.io/restaurant-website/restaurant-in-bhakkar</loc></url>
+  <url>
+    <loc>https://kamran1272.github.io/restaurant-website/delivery</loc>
+  </url>
+  <url>
+    <loc>https://kamran1272.github.io/restaurant-website/user</loc>
+  </url>
+  <url>
+    <loc>https://kamran1272.github.io/restaurant-website/admin</loc>
+  </url>
+</urlset>
