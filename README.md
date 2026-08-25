@@ -1,86 +1,151 @@
-# Getting Started with Create React App
+# Baloch Hospitality
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hotel, rooms, restaurant, long-stay accommodation, and guest-service platform built with React and Express.
 
-## Project Commands
+## Local Development
 
-In the project directory, you can run:
+Install dependencies:
 
-### `npm run dev`
+```bash
+npm install
+```
 
-Starts the React development server on [http://localhost:3000](http://localhost:3000).
+Start the React frontend:
 
-### `npm start`
+```bash
+npm start
+```
 
-Runs the same React development server as `npm run dev`.
+Open:
 
-### `npm run server`
+```text
+http://localhost:3000/restaurant-website
+```
 
-Starts the Express API server from `server.js` on [http://localhost:5000](http://localhost:5000).
+Start the Express API in a second terminal:
+
+```bash
+npm run server
+```
+
+The API runs at:
+
+```text
+http://localhost:5000
+```
+
+Health check:
+
+```text
+http://localhost:5000/api/health
+```
+
+## Demo Credentials
+
+These accounts are for local portfolio/demo use only. They are not production credentials.
+
+### Admin
+
+```text
+Email: admin@baloch.demo
+Password: admin123
+```
+
+Admin route:
+
+```text
+http://localhost:3000/restaurant-website/admin
+```
+
+### Customer
+
+```text
+Email: customer@baloch.demo
+Password: guest123
+```
+
+Customer route:
+
+```text
+http://localhost:3000/restaurant-website/user
+```
+
+## Main Routes
+
+```text
+/restaurant-website/
+/restaurant-website/rooms
+/restaurant-website/rooms/single-room
+/restaurant-website/rooms/double-room
+/restaurant-website/rooms/triple-room
+/restaurant-website/rooms/family-room
+/restaurant-website/rooms/large-family-room
+/restaurant-website/menu
+/restaurant-website/delivery
+/restaurant-website/long-stay
+/restaurant-website/international-guests
+/restaurant-website/admin
+/restaurant-website/user
+```
+
+Local SEO landing pages are also available for hotel, room, family-room, long-stay, and restaurant searches in Bhakkar.
+
+## Current Features
+
+- Hospitality-focused homepage and responsive navigation
+- Room categories and room detail pages
+- Backend room inventory and date-based availability checks
+- Admin room status controls
+- Pakistani restaurant menu with categories, search, sorting, prices, and descriptions
+- Cart and delivery checkout flow
+- Takeaway and office delivery options
+- Payment-method selection for demo checkout
+- Food order status timeline
+- Table reservations and contact enquiries
+- International guest and long-stay enquiry pages
+- Customer panel and admin dashboard
+- Local SEO metadata, structured data, sitemap, and robots.txt
+- Offline localStorage fallback for demo use
 
 ## Available Scripts
 
-In the project directory, you can run:
+```bash
+npm start
+npm run dev
+npm run server
+npm run build
+npm test -- --watchAll=false --runInBand
+```
 
-### `npm start`
+## API Endpoints
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```text
+GET    /api/health
+GET    /api/rooms
+GET    /api/rooms/availability
+PATCH  /api/rooms/:roomId
+POST   /api/reservations
+GET    /api/reservations
+POST   /api/contact-messages
+GET    /api/contact-messages
+POST   /api/orders
+GET    /api/orders
+PATCH  /api/orders/:orderId
+GET    /api/admin/summary
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Production Warning
 
-### `npm test`
+The current project is a local/demo application. The Express server stores records in memory and the frontend has demo authentication and localStorage fallback behavior.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before production deployment, replace these with:
 
-### `npm run build`
+- PostgreSQL or another persistent database
+- Server-side password hashing and secure sessions
+- Role-based authorization for admin endpoints
+- Backend-authoritative booking and payment state
+- Payment-provider webhooks and refund handling
+- Rate limiting, validation, HTTPS, audit logs, and backups
+- Real email, SMS, or WhatsApp notification integrations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Never place payment secrets or production admin credentials in React code, README files, or GitHub Pages assets.
