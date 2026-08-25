@@ -28,10 +28,6 @@ const UserPanelPage = () => {
             role="customer"
             title="Customer panel"
             helperText="Use the demo customer account to review favourite dishes, delivery history, and saved addresses."
-<<<<<<< HEAD
-=======
-            credentialsHint="Demo credentials: customer@baloch.demo / guest123"
->>>>>>> origin/main
             onAuthenticate={login}
           />
         </div>

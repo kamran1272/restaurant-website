@@ -228,7 +228,6 @@ section[id] {
 
 .header-surface {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: auto minmax(0, 1fr) auto;
   grid-template-areas: 'brand nav actions';
   align-items: center;
@@ -236,17 +235,6 @@ section[id] {
   min-height: 5.5rem;
   padding: 0.85rem 1.15rem;
   border-radius: 1rem;
-=======
-  grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-areas:
-    'brand actions'
-    'nav nav';
-  align-items: center;
-  gap: 1rem 1.25rem;
-  min-height: 6.1rem;
-  padding: 1rem 1.15rem 1.05rem;
-  border-radius: 32px;
->>>>>>> origin/main
   border: 1px solid rgba(52, 31, 24, 0.1);
   background: linear-gradient(135deg, rgba(255, 252, 247, 0.94), rgba(255, 247, 239, 0.88));
   box-shadow:
@@ -282,41 +270,15 @@ section[id] {
 
 .brand-copy {
   margin: 0.25rem 0 0;
-<<<<<<< HEAD
   max-width: 15rem;
   font-size: 0.7rem;
-=======
-  max-width: 30rem;
-  font-size: 0.88rem;
->>>>>>> origin/main
   line-height: 1.55;
   color: var(--muted);
 }
 
 .site-navigation-shell {
   grid-area: nav;
-<<<<<<< HEAD
   min-width: 0;
-=======
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  min-width: 0;
-  padding-top: 0.85rem;
-  border-top: 1px solid rgba(52, 31, 24, 0.08);
-}
-
-.site-navigation__eyebrow {
-  margin: 0;
-  padding: 0.72rem 0.95rem;
-  border-radius: 999px;
-  background: rgba(184, 94, 51, 0.08);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(109, 86, 77, 0.88);
->>>>>>> origin/main
 }
 
 .site-navigation {
@@ -330,22 +292,8 @@ section[id] {
   flex: 1 1 auto;
   flex-wrap: nowrap;
   min-width: 0;
-<<<<<<< HEAD
   justify-content: center;
   overflow: hidden;
-=======
-  padding: 0.35rem;
-  border-radius: 999px;
-  border: 1px solid rgba(52, 31, 24, 0.08);
-  background: rgba(255, 255, 255, 0.64);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.site-navigation--desktop::-webkit-scrollbar {
-  display: none;
->>>>>>> origin/main
 }
 
 .site-navigation__link {
@@ -353,15 +301,9 @@ section[id] {
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
   min-height: 2.4rem;
   padding: 0.55rem 0.45rem;
   border-radius: 0;
-=======
-  min-height: 2.8rem;
-  padding: 0.72rem 1rem;
-  border-radius: 999px;
->>>>>>> origin/main
   font-weight: 700;
   white-space: nowrap;
   color: rgba(38, 24, 20, 0.86);
@@ -374,11 +316,7 @@ section[id] {
 
 .site-navigation__link:hover {
   color: var(--accent);
-<<<<<<< HEAD
   background: transparent;
-=======
-  background: rgba(184, 94, 51, 0.1);
->>>>>>> origin/main
   transform: translateY(-1px);
 }
 
@@ -529,7 +467,6 @@ section[id] {
   margin-top: 1.8rem;
 }
 
-<<<<<<< HEAD
 .hero-order-link {
   align-self: center;
   color: #fff9f3;
@@ -637,8 +574,6 @@ section[id] {
   display: none;
 }
 
-=======
->>>>>>> origin/main
 .hero-trust {
   display: flex;
   flex-wrap: wrap;
@@ -847,10 +782,7 @@ section[id] {
 }
 
 .filter-pill {
-<<<<<<< HEAD
   flex: 0 0 auto;
-=======
->>>>>>> origin/main
   padding: 0.72rem 1rem;
   border-radius: 999px;
   border: 1px solid var(--border);
@@ -1006,7 +938,6 @@ section[id] {
   padding: 1.5rem;
 }
 
-<<<<<<< HEAD
 .today-hours {
   margin: 0.65rem 0 0;
   color: var(--accent-deep);
@@ -1016,8 +947,6 @@ section[id] {
   margin-right: 0.35rem;
 }
 
-=======
->>>>>>> origin/main
 .hours-list {
   margin-top: 1rem;
   display: grid;
@@ -1300,18 +1229,12 @@ section[id] {
   }
 
   .header-surface {
-<<<<<<< HEAD
     grid-template-columns: auto minmax(0, 1fr) auto;
     grid-template-areas: 'toggle brand actions';
-=======
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas: 'brand toggle';
->>>>>>> origin/main
     min-height: auto;
     padding: 0.9rem 1rem;
   }
 
-<<<<<<< HEAD
   .site-navigation-shell {
     display: none;
   }
@@ -1334,13 +1257,6 @@ section[id] {
     padding-inline: 0.85rem;
   }
 
-=======
-  .site-navigation-shell,
-  .header-actions {
-    display: none;
-  }
-
->>>>>>> origin/main
   .mobile-nav-panel {
     display: block;
     max-height: 0;
@@ -1378,12 +1294,8 @@ section[id] {
   .site-navigation--mobile .site-navigation__link {
     justify-content: flex-start;
     padding-inline: 1rem;
-<<<<<<< HEAD
     background: transparent;
     border-radius: 0;
-=======
-    background: rgba(52, 31, 24, 0.04);
->>>>>>> origin/main
   }
 
   .hero {
@@ -1424,7 +1336,6 @@ section[id] {
     display: none;
   }
 
-<<<<<<< HEAD
   .brand {
     justify-self: center;
   }
@@ -1441,8 +1352,6 @@ section[id] {
     font-size: 0.78rem;
   }
 
-=======
->>>>>>> origin/main
   .stats-grid,
   .feature-grid,
   .menu-grid,
@@ -1511,18 +1420,14 @@ section[id] {
     width: 100%;
   }
 
-<<<<<<< HEAD
   .header-cta {
     width: auto;
   }
 
-=======
->>>>>>> origin/main
   .hero-actions,
   .menu-filter {
     display: grid;
   }
-<<<<<<< HEAD
 
   .menu-filter {
     display: flex;
@@ -1587,14 +1492,6 @@ section[id] {
 .site-navigation-more__menu .site-navigation__link--active::after {
   right: 0.8rem;
   left: 0.8rem;
-=======
-}
-
-.site-navigation__link--active {
-  color: #fff7f0;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
-  box-shadow: 0 14px 28px rgba(141, 67, 34, 0.24);
->>>>>>> origin/main
 }
 
 .session-pill,
@@ -1653,16 +1550,11 @@ section[id] {
 }
 
 .hero-layout--3d {
-<<<<<<< HEAD
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-=======
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.95fr);
->>>>>>> origin/main
 }
 
 .hero-visual {
   position: relative;
-<<<<<<< HEAD
   min-height: 30rem;
 }
 
@@ -1715,10 +1607,6 @@ section[id] {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.8rem;
   line-height: 1;
-=======
-  perspective: 1400px;
-  min-height: 34rem;
->>>>>>> origin/main
 }
 
 .hero-stack {
@@ -2093,7 +1981,6 @@ section[id] {
   justify-content: space-between;
   gap: 1rem;
 }
-<<<<<<< HEAD
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -2104,8 +1991,6 @@ section[id] {
     transition-duration: 0.01ms !important;
   }
 }
-=======
->>>>>>> origin/main
 
 .price-list__grand {
   margin-top: 0.5rem;
@@ -2911,7 +2796,6 @@ section[id] {
     min-height: 24rem;
   }
 
-<<<<<<< HEAD
   .hero-details {
     grid-template-columns: 1fr;
   }
@@ -2945,8 +2829,6 @@ section[id] {
     border-left: 1px solid rgba(255, 244, 233, 0.2);
   }
 
-=======
->>>>>>> origin/main
   .hero-floating-card {
     position: relative;
     width: 100%;

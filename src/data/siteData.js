@@ -279,11 +279,7 @@ const menuBlueprint = [
   {
     category: 'Chinese and Fusion',
     description: 'Popular restaurant crossovers commonly served in Pakistan for families and office groups.',
-<<<<<<< HEAD
     badge: 'Fusion Favourite',
-=======
-    badge: 'Fusion Best Seller',
->>>>>>> origin/main
     basePrice: 560,
     step: 110,
     course: 'Fusion main',
@@ -386,23 +382,14 @@ export const categoryShowcase = menuBlueprint.map((group, index) => ({
 }));
 
 export const restaurantInfo = {
-<<<<<<< HEAD
   name: 'Baloch Hospitality',
   shortName: 'Baloch',
   tagline: 'Hotel stays, Pakistani dining, delivery, and guest services in one local hospitality destination.',
-=======
-  name: 'Baloch Restaurant',
-  shortName: 'Baloch',
-  tagline: 'Pakistan-inspired dining, delivery, and family-style hospitality in one polished experience.',
->>>>>>> origin/main
   addressLine1: 'Chak No 210/TDA',
   addressLine2: 'Bhakkar, Punjab 52300',
   phone: '+92 346 0434728',
   email: 'kamrankhama7@gmail.com',
-<<<<<<< HEAD
   directionsUrl: 'https://maps.google.com/?q=Chak%20No%20210%2FTDA%20Bhakkar%20Punjab%2052300',
-=======
->>>>>>> origin/main
   serviceArea: 'Bhakkar city and nearby delivery zones',
   deliveryPromise: 'Free delivery on every local order during launch mode',
   foundedTagline: 'Crafted for dine-in trust, home delivery, and repeat orders.',
@@ -411,19 +398,11 @@ export const restaurantInfo = {
 export const heroSlides = [
   {
     image: RESTAURANT_IMAGES[1],
-<<<<<<< HEAD
     eyebrow: 'Baloch Hospitality',
     title: 'Stay. Dine. Experience.',
     description:
       'Comfortable accommodation, authentic Pakistani dining, and a welcoming base for guests, families, and longer stays.',
     metrics: ['Hotel and dining', 'Family stays', 'Guest services'],
-=======
-    eyebrow: 'Restaurant + delivery platform',
-    title: 'A premium Pakistan-focused food destination with dine-in energy and home-delivery convenience.',
-    description:
-      'Browse more than one hundred dishes, order for home delivery, reserve family tables, and manage customer or admin tasks from a cleaner, more structured experience.',
-    metrics: ['117 dishes', '5 core routes', 'Free local delivery'],
->>>>>>> origin/main
   },
   {
     image: RESTAURANT_IMAGES[4],
@@ -466,7 +445,6 @@ export const stats = [
 
 export const homeServiceCards = [
   {
-<<<<<<< HEAD
     title: 'Hotel and rooms',
     description: 'A hospitality overview for room stays, family visits, and longer stays. Room availability and booking are not yet connected online.',
   },
@@ -485,18 +463,6 @@ export const homeServiceCards = [
   {
     title: 'Dining delivery',
     description: 'Keep local food delivery and table reservations close at hand for guests who want to eat in, take away, or order to their stay.',
-=======
-    title: 'Home Delivery',
-    description: 'Order curries, platters, breakfast, and desserts with free city delivery during launch mode.',
-  },
-  {
-    title: 'Table Reservations',
-    description: 'Keep the stronger booking flow for family dinners, business meals, and special celebrations.',
-  },
-  {
-    title: 'Admin Visibility',
-    description: 'Watch incoming orders, messages, reservations, and status changes from a cleaner dashboard.',
->>>>>>> origin/main
   },
 ];
 
@@ -519,37 +485,25 @@ export const galleryImages = [
   {
     image: RESTAURANT_IMAGES[2],
     title: 'Main dining hall',
-<<<<<<< HEAD
     category: 'Interior',
-=======
->>>>>>> origin/main
     description: 'Designed for family meals, celebrations, and comfortable evening service.',
   },
   {
     image: RESTAURANT_IMAGES[3],
     title: 'Private seating corners',
-<<<<<<< HEAD
     category: 'Events',
-=======
->>>>>>> origin/main
     description: 'Useful for birthdays, business lunches, and smaller group gatherings.',
   },
   {
     image: RESTAURANT_IMAGES[4],
     title: 'Evening ambience',
-<<<<<<< HEAD
     category: 'Outdoor',
-=======
->>>>>>> origin/main
     description: 'A warmer mood with layered lighting and premium presentation.',
   },
   {
     image: RESTAURANT_IMAGES[5],
     title: 'Service and presentation',
-<<<<<<< HEAD
     category: 'Food',
-=======
->>>>>>> origin/main
     description: 'Dining visuals that help the restaurant feel credible before the guest even arrives.',
   },
 ];

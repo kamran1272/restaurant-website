@@ -3,11 +3,7 @@ import PortalAuthCard from '../components/PortalAuthCard';
 import { useStore } from '../context/StoreContext';
 
 const ADMIN_STATUS_OPTIONS = ['Received', 'Preparing', 'Out for Delivery', 'Delivered', 'Cancelled'];
-<<<<<<< HEAD
 const ADMIN_TABS = ['Dashboard', 'Bookings', 'Rooms', 'Restaurant', 'Orders', 'Guests', 'Payments', 'Offers', 'Messages', 'Settings'];
-=======
-const ADMIN_TABS = ['Orders', 'Reservations', 'Messages', 'Catalog'];
->>>>>>> origin/main
 
 const AdminPanelPage = () => {
   const {
@@ -21,7 +17,6 @@ const AdminPanelPage = () => {
     menuInsights,
     orders,
     reservations,
-<<<<<<< HEAD
     rooms,
     serviceMode,
     session,
@@ -30,14 +25,6 @@ const AdminPanelPage = () => {
   } = useStore();
 
   const [activeTab, setActiveTab] = useState('Dashboard');
-=======
-    serviceMode,
-    session,
-    setOrderStatus,
-  } = useStore();
-
-  const [activeTab, setActiveTab] = useState('Orders');
->>>>>>> origin/main
   const [statusFilter, setStatusFilter] = useState('All');
   const [searchValue, setSearchValue] = useState('');
 
@@ -55,7 +42,6 @@ const AdminPanelPage = () => {
     [orders, searchValue, statusFilter]
   );
 
-<<<<<<< HEAD
   const guestSummaries = useMemo(() => {
     const guests = new Map();
 
@@ -77,8 +63,6 @@ const AdminPanelPage = () => {
     return Array.from(guests.values());
   }, [orders]);
 
-=======
->>>>>>> origin/main
   if (!session || session.role !== 'admin') {
     return (
       <section className="section page-shell">
@@ -86,12 +70,7 @@ const AdminPanelPage = () => {
           <PortalAuthCard
             role="admin"
             title="Admin panel"
-<<<<<<< HEAD
             helperText="Sign in with an authorized staff account to manage hospitality operations."
-=======
-            helperText="Use the demo admin account to manage order statuses and view dashboard summaries."
-            credentialsHint="Demo credentials: admin@baloch.demo / admin123"
->>>>>>> origin/main
             onAuthenticate={login}
           />
         </div>
@@ -103,15 +82,9 @@ const AdminPanelPage = () => {
     <section className="section page-shell">
       <div className="container page-intro">
         <p className="eyebrow">Admin panel</p>
-<<<<<<< HEAD
         <h1 className="page-title">Baloch Hospitality operations, from guest enquiries to restaurant orders.</h1>
         <p className="page-description">
           Demo access is scoped to operations visibility. Restaurant data is connected; rooms, hotel bookings, discounts, and payment providers await their production services.
-=======
-        <h1 className="page-title">Operations dashboard for orders, reservations, contact requests, and menu coverage.</h1>
-        <p className="page-description">
-          This admin route is now more structured, with filters, operational cards, and separate sections for order control, guest communication, and catalog insight.
->>>>>>> origin/main
         </p>
       </div>
 
@@ -142,10 +115,7 @@ const AdminPanelPage = () => {
               <span className={`status-pill status-pill--${serviceMode}`}>
                 {serviceMode === 'online' ? 'API connected' : serviceMode === 'offline' ? 'Demo mode' : 'Checking API'}
               </span>
-<<<<<<< HEAD
               <span className="session-pill">Super Admin demo</span>
-=======
->>>>>>> origin/main
               <button type="button" className="button button--soft" onClick={logout}>
                 Sign out
               </button>
@@ -247,7 +217,6 @@ const AdminPanelPage = () => {
             </>
           ) : null}
 
-<<<<<<< HEAD
           {activeTab === 'Dashboard' ? (
             <div className="dashboard-split">
               <div>
@@ -421,8 +390,6 @@ const AdminPanelPage = () => {
             </div>
           ) : null}
 
-=======
->>>>>>> origin/main
           {activeTab === 'Reservations' ? (
             reservations.length === 0 ? (
               <p className="empty-copy">Reservation requests will appear here.</p>

@@ -6,13 +6,9 @@ import {
   fetchContactMessages,
   fetchOrders,
   fetchReservations,
-<<<<<<< HEAD
   fetchRooms,
   checkApiHealth,
   updateRoom,
-=======
-  checkApiHealth,
->>>>>>> origin/main
   updateOrderStatus,
 } from '../services/siteApi';
 import {
@@ -130,10 +126,7 @@ export function StoreProvider({ children }) {
   const [orders, setOrders] = useState(() => loadState(STORAGE_KEYS.orders, []));
   const [reservations, setReservations] = useState(() => loadState(STORAGE_KEYS.reservations, []));
   const [contactMessages, setContactMessages] = useState(() => loadState(STORAGE_KEYS.messages, []));
-<<<<<<< HEAD
   const [rooms, setRooms] = useState([]);
-=======
->>>>>>> origin/main
   const [notice, setNotice] = useState(null);
 
   useEffect(() => {
@@ -184,10 +177,7 @@ export function StoreProvider({ children }) {
           fetchOrders(controller.signal),
           fetchReservations(controller.signal),
           fetchContactMessages(controller.signal),
-<<<<<<< HEAD
           fetchRooms(controller.signal),
-=======
->>>>>>> origin/main
         ]);
       })
       .then((results) => {
@@ -195,11 +185,7 @@ export function StoreProvider({ children }) {
           return;
         }
 
-<<<<<<< HEAD
         const [ordersResult, reservationsResult, messagesResult, roomsResult] = results;
-=======
-        const [ordersResult, reservationsResult, messagesResult] = results;
->>>>>>> origin/main
 
         if (ordersResult.status === 'fulfilled') {
           setOrders((current) => mergeRecords(current, ordersResult.value, 'orderNumber'));
@@ -212,13 +198,10 @@ export function StoreProvider({ children }) {
         if (messagesResult.status === 'fulfilled') {
           setContactMessages((current) => mergeRecords(current, messagesResult.value, 'id'));
         }
-<<<<<<< HEAD
 
         if (roomsResult.status === 'fulfilled') {
           setRooms(roomsResult.value);
         }
-=======
->>>>>>> origin/main
       })
       .catch(() => {
         setServiceMode('offline');
@@ -323,13 +306,8 @@ export function StoreProvider({ children }) {
       setReservations((current) => [response.reservation, ...current]);
       showNotice(
         'success',
-<<<<<<< HEAD
         'Reservation request received',
         response.message || 'Your table request has been sent to the restaurant team for confirmation.'
-=======
-        'Reservation sent',
-        response.message || 'Your table request has been delivered to the front desk.'
->>>>>>> origin/main
       );
       return { status: 'success' };
     } catch (error) {
@@ -532,7 +510,6 @@ export function StoreProvider({ children }) {
     }
   };
 
-<<<<<<< HEAD
   const setRoomStatus = async (roomId, status) => {
     setRooms((current) => current.map((room) => (room.id === roomId ? { ...room, status } : room)));
 
@@ -548,8 +525,6 @@ export function StoreProvider({ children }) {
     }
   };
 
-=======
->>>>>>> origin/main
   const reorderOrder = (orderId) => {
     const matchedOrder = orders.find((order) => order.id === orderId);
 
@@ -717,20 +692,14 @@ export function StoreProvider({ children }) {
     removeFromCart,
     reorderOrder,
     reservations,
-<<<<<<< HEAD
     rooms,
-=======
->>>>>>> origin/main
     restaurantInfo,
     serviceMode,
     serviceZones,
     session,
     setNotice,
     setOrderStatus,
-<<<<<<< HEAD
     setRoomStatus,
-=======
->>>>>>> origin/main
     socialLinks,
     submitContact,
     submitReservation,

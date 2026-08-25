@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 import { fetchRoomAvailability } from '../services/siteApi';
 
 const HeroSection = ({
@@ -14,11 +13,6 @@ const HeroSection = ({
   const [roomSearchSent, setRoomSearchSent] = useState(false);
   const [availableRooms, setAvailableRooms] = useState(null);
   const [roomSearchError, setRoomSearchError] = useState('');
-=======
-
-const HeroSection = ({ slides, featuredDishes, onAddToCart }) => {
-  const [activeSlide, setActiveSlide] = useState(0);
->>>>>>> origin/main
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
@@ -30,7 +24,6 @@ const HeroSection = ({ slides, featuredDishes, onAddToCart }) => {
 
   const currentSlide = slides[activeSlide];
 
-<<<<<<< HEAD
   const handleRoomSearch = async (event) => {
     event.preventDefault();
     setRoomSearchError('');
@@ -51,8 +44,6 @@ const HeroSection = ({ slides, featuredDishes, onAddToCart }) => {
     }
   };
 
-=======
->>>>>>> origin/main
   return (
     <section id="top" className="hero hero--platform">
       <div className="hero-slides" aria-hidden="true">
@@ -72,7 +63,6 @@ const HeroSection = ({ slides, featuredDishes, onAddToCart }) => {
           <h1 className="hero-title">{currentSlide.title}</h1>
           <p className="hero-description">{currentSlide.description}</p>
 
-<<<<<<< HEAD
           <div className="hero-details" aria-label="Restaurant details">
             <a href={`tel:${restaurantInfo.phone}`}>
               <span>Call us</span>
@@ -147,70 +137,6 @@ const HeroSection = ({ slides, featuredDishes, onAddToCart }) => {
               <strong>Rooms, dining, and time well spent.</strong>
             </figcaption>
           </figure>
-=======
-          <div className="hero-actions">
-            <Link to="/delivery" className="button button--solid">
-              Start delivery order
-            </Link>
-            <Link to="/menu" className="button button--ghost">
-              Explore 100+ dishes
-            </Link>
-          </div>
-
-          <div className="hero-trust">
-            <span>Free local delivery</span>
-            <span>Customer and admin panels</span>
-            <span>Pakistan-focused 100+ dish menu</span>
-          </div>
-
-          <div className="hero-metrics">
-            {currentSlide.metrics?.map((metric) => (
-              <div key={metric} className="hero-metric-card">
-                <strong>{metric}</strong>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="hero-visual reveal delay-2">
-          <div className="hero-orbit hero-orbit--one" aria-hidden="true" />
-          <div className="hero-orbit hero-orbit--two" aria-hidden="true" />
-
-          <div className="hero-stack">
-            {featuredDishes.map((dish, index) => (
-              <article key={dish.id} className={`hero-floating-card hero-floating-card--${index + 1}`}>
-                <img src={dish.image} alt={dish.imageAlt || dish.title} className="hero-floating-card__image" />
-                <div className="hero-floating-card__content">
-                  <p>{dish.category}</p>
-                  <h2>{dish.title}</h2>
-                  <strong>{dish.formattedPrice}</strong>
-                  <div className="hero-floating-card__meta">
-                    <span>{dish.rating} stars</span>
-                    <span>{dish.serves}</span>
-                  </div>
-                  <button type="button" className="button button--soft" onClick={() => onAddToCart(dish.id)}>
-                    Add to cart
-                  </button>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="hero-scene-panel">
-            <p className="hero-scene-panel__eyebrow">Immersive dining preview</p>
-            <div className="hero-scene-strip">
-              {slides.map((slide) => (
-                <article key={slide.image} className="hero-scene-chip">
-                  <img src={slide.image} alt={slide.eyebrow} />
-                  <div>
-                    <strong>{slide.eyebrow}</strong>
-                    <span>{slide.metrics?.[0]}</span>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
->>>>>>> origin/main
         </div>
       </div>
 
@@ -226,15 +152,12 @@ const HeroSection = ({ slides, featuredDishes, onAddToCart }) => {
           </button>
         ))}
       </div>
-<<<<<<< HEAD
 
       <div className="mobile-action-bar" aria-label="Restaurant quick actions">
         <Link to="/menu">Menu</Link>
         <a href={`tel:${restaurantInfo.phone}`}>Call</a>
         <a href="#rooms">Book room</a>
       </div>
-=======
->>>>>>> origin/main
     </section>
   );
 };

@@ -11,7 +11,6 @@ app.use(express.json());
 const reservations = [];
 const contactMessages = [];
 const orders = [];
-<<<<<<< HEAD
 const rooms = [
   { id: 'room-101', number: '101', type: 'Single Room', guests: 1, status: 'Available', rate: null },
   { id: 'room-201', number: '201', type: 'Double Room', guests: 2, status: 'Available', rate: null },
@@ -20,8 +19,6 @@ const rooms = [
   { id: 'room-501', number: '501', type: 'Large Family Room', guests: 5, status: 'Available', rate: null },
 ];
 const roomBookings = [];
-=======
->>>>>>> origin/main
 
 function createRecordId(prefix) {
   return `${prefix}-${crypto.randomUUID()}`;
@@ -39,7 +36,6 @@ app.get('/api/health', (_request, response) => {
   response.status(200).json({
     status: 'ok',
     now: new Date().toISOString(),
-<<<<<<< HEAD
     services: ['reservations', 'contact-messages', 'orders', 'rooms'],
   });
 });
@@ -80,12 +76,6 @@ app.patch('/api/rooms/:roomId', (request, response) => {
   response.status(200).json({ message: 'Room updated.', room });
 });
 
-=======
-    services: ['reservations', 'contact-messages', 'orders'],
-  });
-});
-
->>>>>>> origin/main
 app.post('/api/reservations', (request, response) => {
   const { name, phone, email, guests, date, time, occasion = '', notes = '' } = request.body;
 

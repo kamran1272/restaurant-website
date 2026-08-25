@@ -23,15 +23,12 @@ function getServiceCopy(serviceMode) {
   return 'Checking whether the front desk API is available.';
 }
 
-<<<<<<< HEAD
 function getTodayHours(openingHours) {
   const day = new Date().getDay();
   const openingHoursIndex = day === 0 ? 3 : day === 5 ? 1 : day === 6 ? 2 : 0;
   return openingHours[openingHoursIndex]?.hours;
 }
 
-=======
->>>>>>> origin/main
 const ReservationSection = ({
   onSubmitReservation,
   openingHours,
@@ -137,12 +134,9 @@ const ReservationSection = ({
 
           <div className="reservation-panel">
             <h3>Opening hours</h3>
-<<<<<<< HEAD
             <p className="today-hours">
               <strong>Today</strong> {getTodayHours(openingHours)}
             </p>
-=======
->>>>>>> origin/main
             <div className="hours-list">
               {openingHours.map((entry) => (
                 <div key={entry.day} className="hours-row">

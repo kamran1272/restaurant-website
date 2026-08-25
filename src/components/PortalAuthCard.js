@@ -1,16 +1,9 @@
 import React, { useState } from 'react';
 
-<<<<<<< HEAD
 const PortalAuthCard = ({ role, title, helperText, onAuthenticate }) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-=======
-const PortalAuthCard = ({ role, title, helperText, credentialsHint, onAuthenticate }) => {
-  const [formData, setFormData] = useState({
-    email: role === 'admin' ? 'admin@baloch.demo' : 'customer@baloch.demo',
-    password: role === 'admin' ? 'admin123' : 'guest123',
->>>>>>> origin/main
   });
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -57,11 +50,7 @@ const PortalAuthCard = ({ role, title, helperText, credentialsHint, onAuthentica
         Open {role === 'admin' ? 'admin' : 'customer'} panel
       </button>
 
-<<<<<<< HEAD
       <p className="portal-auth__hint">Enter an authorized account to access the portal.</p>
-=======
-      <p className="portal-auth__hint">{credentialsHint}</p>
->>>>>>> origin/main
     </form>
   );
 };
