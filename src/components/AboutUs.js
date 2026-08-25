@@ -10,22 +10,38 @@ const AboutUs = ({ highlights, stats }) => {
             src={withBasePath('/img/r4.jpg')}
             alt="Dining area at Baloch Restaurant"
             className="story-media__image"
+<<<<<<< HEAD
             loading="lazy"
           />
           <div className="story-media__card">
             <p className="story-media__eyebrow">A taste of tradition</p>
             <p className="story-media__copy">
               Traditional flavours, generous hospitality, and a table made for family and friends.
+=======
+          />
+          <div className="story-media__card">
+            <p className="story-media__eyebrow">Atmosphere first</p>
+            <p className="story-media__copy">
+              Guests should feel looked after from the hero banner to the final booking message.
+>>>>>>> origin/main
             </p>
           </div>
         </div>
 
         <div className="section-copy reveal delay-2">
           <p className="eyebrow">Our story</p>
+<<<<<<< HEAD
           <h2 className="section-title">A taste of tradition, made for family and friends.</h2>
           <p className="section-description">
             Baloch Restaurant brings together Pakistani and Balochi flavours, generous hospitality, and
             a calm space for everyday dining as well as bigger celebrations.
+=======
+          <h2 className="section-title">Modern Balochi flavours with the warmth of a family table.</h2>
+          <p className="section-description">
+            Baloch Restaurant is built around generous hospitality, deeply satisfying food, and a calm
+            space for everyday dining as well as bigger celebrations. The refreshed site now reflects
+            that same energy with clearer storytelling, stronger visuals, and more usable guest flows.
+>>>>>>> origin/main
           </p>
 
           <div className="stats-grid">

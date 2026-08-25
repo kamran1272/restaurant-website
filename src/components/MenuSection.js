@@ -1,5 +1,9 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
+=======
+import { menuCategories } from '../data/siteData';
+>>>>>>> origin/main
 
 const SORT_OPTIONS = [
   { value: 'featured', label: 'Featured first' },
@@ -8,6 +12,7 @@ const SORT_OPTIONS = [
   { value: 'title', label: 'Alphabetical' },
 ];
 
+<<<<<<< HEAD
 const CATEGORY_FILTERS = [
   { value: 'All', label: 'All dishes' },
   { value: 'Popular', label: 'Popular', matches: (item) => item.isFeatured },
@@ -23,6 +28,8 @@ const CATEGORY_FILTERS = [
   { value: 'Desserts', label: 'Desserts', categories: ['Desserts'] },
 ];
 
+=======
+>>>>>>> origin/main
 const MenuSection = ({
   menuItems,
   onAddToCart,
@@ -35,7 +42,10 @@ const MenuSection = ({
   ctaTo,
   showSearch = true,
   showCategoryFilter = true,
+<<<<<<< HEAD
   featuredMode = false,
+=======
+>>>>>>> origin/main
 }) => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchValue, setSearchValue] = useState('');
@@ -43,11 +53,15 @@ const MenuSection = ({
 
   const visibleItems = useMemo(() => {
     const nextItems = menuItems.filter((item) => {
+<<<<<<< HEAD
       const activeFilter = CATEGORY_FILTERS.find((filter) => filter.value === activeCategory);
       const matchesCategory =
         activeCategory === 'All' ||
         activeFilter?.matches?.(item) ||
         activeFilter?.categories?.includes(item.category);
+=======
+      const matchesCategory = activeCategory === 'All' || item.category === activeCategory;
+>>>>>>> origin/main
       const matchesSearch =
         item.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         item.category.toLowerCase().includes(searchValue.toLowerCase());
@@ -72,12 +86,16 @@ const MenuSection = ({
 
   const availableCategories = useMemo(() => {
     const presentCategories = new Set(menuItems.map((item) => item.category));
+<<<<<<< HEAD
     return CATEGORY_FILTERS.filter(
       (filter) =>
         filter.value === 'All' ||
         filter.matches?.(menuItems.find((item) => item.isFeatured)) ||
         filter.categories?.some((category) => presentCategories.has(category))
     );
+=======
+    return menuCategories.filter((category) => category === 'All' || presentCategories.has(category));
+>>>>>>> origin/main
   }, [menuItems]);
 
   return (
@@ -127,12 +145,21 @@ const MenuSection = ({
           <div className="menu-filter reveal delay-2" role="tablist" aria-label="Menu categories">
             {availableCategories.map((category) => (
               <button
+<<<<<<< HEAD
                 key={category.value}
                 type="button"
                 className={`filter-pill ${category.value === activeCategory ? 'is-active' : ''}`}
                 onClick={() => setActiveCategory(category.value)}
               >
                 {category.label}
+=======
+                key={category}
+                type="button"
+                className={`filter-pill ${category === activeCategory ? 'is-active' : ''}`}
+                onClick={() => setActiveCategory(category)}
+              >
+                {category}
+>>>>>>> origin/main
               </button>
             ))}
           </div> 
@@ -142,6 +169,7 @@ const MenuSection = ({
           {visibleItems.map((item) => (
             <article key={item.id} className="menu-card menu-card--interactive reveal">
               <div className="menu-card__image-wrap">
+<<<<<<< HEAD
                 <img
                   src={item.image}
                   alt={item.imageAlt || item.title}
@@ -149,6 +177,10 @@ const MenuSection = ({
                   loading="lazy"
                 />
                 <span className="menu-card__badge">{featuredMode ? 'Featured dish' : item.badge}</span>
+=======
+                <img src={item.image} alt={item.imageAlt || item.title} className="menu-card__image" />
+                <span className="menu-card__badge">{item.badge}</span>
+>>>>>>> origin/main
                 <span className="menu-card__rating">{item.rating} stars</span>
               </div>
 

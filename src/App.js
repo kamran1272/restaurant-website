@@ -8,12 +8,16 @@ import { StoreProvider, useStore } from './context/StoreContext';
 import AdminPanelPage from './pages/AdminPanelPage';
 import DeliveryPage from './pages/DeliveryPage';
 import HomePage from './pages/HomePage';
+<<<<<<< HEAD
 import InternationalGuestsPage from './pages/InternationalGuestsPage';
 import LongStayPage from './pages/LongStayPage';
 import LocalLandingPage from './pages/LocalLandingPage';
 import MenuPage from './pages/MenuPage';
 import RoomDetailPage from './pages/RoomDetailPage';
 import RoomsPage from './pages/RoomsPage';
+=======
+import MenuPage from './pages/MenuPage';
+>>>>>>> origin/main
 import UserPanelPage from './pages/UserPanelPage';
 import { BASE_PATH } from './utils/sitePaths';
 
@@ -58,6 +62,7 @@ const AppShell = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+<<<<<<< HEAD
           <Route path="/international-guests" element={<InternationalGuestsPage />} />
           <Route path="/long-stay" element={<LongStayPage />} />
           <Route path="/hotel-in-bhakkar" element={<LocalLandingPage variant="hotel" />} />
@@ -67,6 +72,8 @@ const AppShell = () => {
           <Route path="/restaurant-in-bhakkar" element={<LocalLandingPage variant="restaurant" />} />
           <Route path="/rooms" element={<RoomsPage />} />
           <Route path="/rooms/:roomSlug" element={<RoomDetailPage />} />
+=======
+>>>>>>> origin/main
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/delivery" element={<DeliveryPage />} />
           <Route path="/user" element={<UserPanelPage />} />

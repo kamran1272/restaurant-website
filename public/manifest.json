@@ -1,6 +1,10 @@
 {
   "short_name": "Baloch",
+<<<<<<< HEAD
   "name": "Baloch Hospitality",
+=======
+  "name": "Baloch Restaurant Platform",
+>>>>>>> origin/main
   "icons": [
     {
       "src": "img/favicon.webp",
@@ -13,5 +17,9 @@
   "display": "standalone",
   "theme_color": "#201714",
   "background_color": "#f4ede3",
+<<<<<<< HEAD
   "description": "Hospitality destination for hotel stays, rooms, Pakistani dining, delivery, reservations, and guest services."
+=======
+  "description": "Pakistan-focused restaurant platform with menu browsing, delivery, reservations, and admin views."
+>>>>>>> origin/main
 }

@@ -13,7 +13,11 @@ const CategorySpotlightGrid = ({ items, eyebrow, title, description, compact = f
         {items.map((item) => (
           <article key={item.id} className="category-spotlight-card">
             <div className="category-spotlight-card__image-wrap">
+<<<<<<< HEAD
               <img src={item.image} alt={item.title} className="category-spotlight-card__image" loading="lazy" />
+=======
+              <img src={item.image} alt={item.title} className="category-spotlight-card__image" />
+>>>>>>> origin/main
               <span className="category-spotlight-card__badge">{item.badge}</span>
             </div>
 

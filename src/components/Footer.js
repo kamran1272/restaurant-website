@@ -4,10 +4,14 @@ import SocialMediaLinks from './SocialMediaLinks';
 
 const FOOTER_LINKS = [
   { to: '/', label: 'Home' },
+<<<<<<< HEAD
   { to: '/rooms', label: 'Rooms' },
   { to: '/menu', label: 'Menu' },
   { to: '/long-stay', label: 'Long stay' },
   { to: '/international-guests', label: 'International guests' },
+=======
+  { to: '/menu', label: 'Menu' },
+>>>>>>> origin/main
   { to: '/delivery', label: 'Delivery' },
   { to: '/user', label: 'User Panel' },
   { to: '/admin', label: 'Admin Panel' },
@@ -44,7 +48,11 @@ const Footer = ({ restaurantInfo, socialLinks }) => {
       </div>
 
       <div className="container footer-bottom">
+<<<<<<< HEAD
         <p>{currentYear} Baloch Hospitality. Hotel, dining, delivery, and guest services.</p>
+=======
+        <p>{currentYear} Baloch Restaurant. Structured for SEO, delivery, customer flows, and admin visibility.</p>
+>>>>>>> origin/main
         <SocialMediaLinks links={socialLinks} compact />
       </div>
     </footer>

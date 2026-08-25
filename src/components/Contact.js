@@ -91,9 +91,12 @@ const Contact = ({ onSubmitContact, restaurantInfo, serviceMode, socialLinks }) 
               <span>Address</span>
               <strong>{restaurantInfo.addressLine1}</strong>
               <p>{restaurantInfo.addressLine2}</p>
+<<<<<<< HEAD
               <a href={restaurantInfo.directionsUrl} target="_blank" rel="noreferrer">
                 Get directions
               </a>
+=======
+>>>>>>> origin/main
             </div>
             <div className="detail-card">
               <span>Phone</span>

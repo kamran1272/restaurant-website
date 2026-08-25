@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useMemo, useState } from 'react';
 
 const GALLERY_CATEGORIES = ['All', 'Food', 'Interior', 'Outdoor', 'Events'];
@@ -9,6 +10,11 @@ const GallerySection = ({ images }) => {
     [activeCategory, images]
   );
 
+=======
+import React from 'react';
+
+const GallerySection = ({ images }) => {
+>>>>>>> origin/main
   return (
     <section id="gallery" className="section section--gallery">
       <div className="container">
@@ -21,6 +27,7 @@ const GallerySection = ({ images }) => {
           </p>
         </div>
 
+<<<<<<< HEAD
         <div className="menu-filter gallery-filter" role="tablist" aria-label="Gallery categories">
           {GALLERY_CATEGORIES.map((category) => (
             <button
@@ -36,11 +43,19 @@ const GallerySection = ({ images }) => {
 
         <div className="gallery-grid">
           {visibleImages.map((image, index) => (
+=======
+        <div className="gallery-grid">
+          {images.map((image, index) => (
+>>>>>>> origin/main
             <article
               key={image.image}
               className={`gallery-card reveal ${index === 0 ? 'gallery-card--large' : ''}`}
             >
+<<<<<<< HEAD
               <img src={image.image} alt={image.title} className="gallery-card__image" loading="lazy" />
+=======
+              <img src={image.image} alt={image.title} className="gallery-card__image" />
+>>>>>>> origin/main
               <div className="gallery-card__overlay">
                 <h3>{image.title}</h3>
                 <p>{image.description}</p>

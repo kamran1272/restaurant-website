@@ -27,7 +27,10 @@ import {
   stats,
   testimonials,
 } from '../data/siteData';
+<<<<<<< HEAD
 import { roomTypes } from '../data/roomData';
+=======
+>>>>>>> origin/main
 
 const HomePage = () => {
   const {
@@ -46,6 +49,7 @@ const HomePage = () => {
     <>
       <HeroSection
         slides={heroSlides}
+<<<<<<< HEAD
         restaurantInfo={restaurantInfo}
         openingHours={openingHours}
         onSubmitContact={submitContact}
@@ -124,6 +128,12 @@ const HomePage = () => {
         </div>
       </section>
 
+=======
+        featuredDishes={featuredMenuItems.slice(0, 3)}
+        onAddToCart={addToCart}
+      />
+
+>>>>>>> origin/main
       <AboutUs highlights={highlights} stats={stats} />
 
       <CategorySpotlightGrid
@@ -133,6 +143,7 @@ const HomePage = () => {
         description="Instead of one flat list, the platform now treats Pakistani food categories like real collections with their own positioning, imagery, and menu logic."
       />
 
+<<<<<<< HEAD
       <section id="why-stay" className="section section--services">
         <div className="container">
           <div className="section-heading">
@@ -141,6 +152,13 @@ const HomePage = () => {
             <p className="section-description">
               Explore the hospitality offering first, then choose the separate restaurant and delivery journeys below. Room availability and online booking are currently handled by enquiry.
             </p>
+=======
+      <section className="section section--services">
+        <div className="container">
+          <div className="section-heading">
+            <p className="eyebrow">Platform upgrade</p>
+            <h2 className="section-title">Restaurant storytelling, ordering, and operations now live in one clearer system.</h2>
+>>>>>>> origin/main
           </div>
 
           <div className="showcase-grid">
@@ -151,6 +169,7 @@ const HomePage = () => {
               </article>
             ))}
           </div>
+<<<<<<< HEAD
 
           <div className="hero-actions">
             <a href="#contact" className="button button--solid">
@@ -169,6 +188,8 @@ const HomePage = () => {
               Explore restaurant
             </Link>
           </div>
+=======
+>>>>>>> origin/main
         </div>
       </section>
 
@@ -178,16 +199,27 @@ const HomePage = () => {
         onToggleFavorite={toggleFavorite}
         favoriteIds={favorites}
         introEyebrow="Featured dishes"
+<<<<<<< HEAD
         introTitle="A considered selection from the Pakistan-focused menu."
         introDescription="Start with these featured dishes, then open the full menu to browse more than one hundred items across major Pakistani restaurant categories."
+=======
+        introTitle="A broader, Pakistan-focused menu with delivery-ready favourites."
+        introDescription="Start with the most-loved dishes here, then open the full menu to browse more than one hundred items across major Pakistani restaurant categories."
+>>>>>>> origin/main
         ctaLabel="Browse full menu"
         ctaTo="/menu"
         showSearch={false}
         showCategoryFilter={false}
+<<<<<<< HEAD
         featuredMode
       />
 
       <section id="delivery" className="section section--delivery-callout">
+=======
+      />
+
+      <section className="section section--delivery-callout">
+>>>>>>> origin/main
         <div className="container delivery-callout">
           <div className="delivery-callout__copy">
             <p className="eyebrow">Delivery and payment</p>
@@ -216,6 +248,7 @@ const HomePage = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       <section className="section section--international-callout">
         <div className="container delivery-callout">
           <div className="delivery-callout__copy">
@@ -227,6 +260,8 @@ const HomePage = () => {
         </div>
       </section>
 
+=======
+>>>>>>> origin/main
       <GallerySection images={galleryImages} />
 
       <section className="section section--portal">

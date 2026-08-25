@@ -4,6 +4,7 @@ import { buildAbsoluteUrl } from '../utils/sitePaths';
 
 const ROUTE_SEO = {
   '/': {
+<<<<<<< HEAD
     title: 'Baloch Hospitality | Hotel, Rooms, Dining and Guest Services',
     description:
       'Discover Baloch Hospitality in Bhakkar: hotel stays, rooms, Pakistani dining, local delivery, table reservations, and guest services.',
@@ -33,6 +34,25 @@ const ROUTE_SEO = {
   },
   '/menu': {
     title: 'Menu | Baloch Hospitality',
+=======
+    title: 'Baloch Restaurant | 100+ Pakistani Dishes, Delivery and Dining',
+    description:
+      'Explore more than 100 Pakistani dishes, free local delivery, reservations, customer history, and admin operations from one polished Baloch Restaurant platform.',
+    keywords:
+      'Baloch Restaurant, Pakistani restaurant, Bhakkar restaurant, Pakistani food delivery, biryani, karahi, BBQ, restaurant admin dashboard, customer panel',
+    image: '/img/f9.jpg',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Restaurant',
+      name: 'Baloch Restaurant',
+      servesCuisine: ['Pakistani', 'BBQ', 'Karahi', 'Biryani'],
+      acceptsReservations: true,
+      areaServed: 'Bhakkar, Punjab, Pakistan',
+    },
+  },
+  '/menu': {
+    title: 'Menu | Baloch Restaurant',
+>>>>>>> origin/main
     description:
       'Browse a large Pakistan-focused menu with BBQ, karahi, biryani, desserts, drinks, delivery deals, and more.',
     keywords:
@@ -41,6 +61,7 @@ const ROUTE_SEO = {
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Menu',
+<<<<<<< HEAD
       name: 'Baloch Hospitality Restaurant Menu',
       hasMenuSection: ['BBQ and Grills', 'Karahi and Handi', 'Biryani and Pulao', 'Desserts'],
     },
@@ -123,6 +144,14 @@ const ROUTE_SEO = {
   },
   '/delivery': {
     title: 'Delivery and Checkout | Baloch Hospitality',
+=======
+      name: 'Baloch Restaurant Menu',
+      hasMenuSection: ['BBQ and Grills', 'Karahi and Handi', 'Biryani and Pulao', 'Desserts'],
+    },
+  },
+  '/delivery': {
+    title: 'Delivery and Checkout | Baloch Restaurant',
+>>>>>>> origin/main
     description:
       'Order home delivery with free local shipping, cart management, delivery zones, payment-method selection, and polished checkout flows.',
     keywords:
@@ -131,12 +160,20 @@ const ROUTE_SEO = {
     schema: {
       '@context': 'https://schema.org',
       '@type': 'FoodEstablishment',
+<<<<<<< HEAD
       name: 'Baloch Hospitality Delivery',
+=======
+      name: 'Baloch Restaurant Delivery',
+>>>>>>> origin/main
       availableService: 'Food delivery',
     },
   },
   '/user': {
+<<<<<<< HEAD
     title: 'Customer Panel | Baloch Hospitality',
+=======
+    title: 'Customer Panel | Baloch Restaurant',
+>>>>>>> origin/main
     description:
       'Access demo customer tools for favourites, loyalty-style info, recent orders, saved delivery details, and repeat ordering.',
     keywords:
@@ -145,11 +182,19 @@ const ROUTE_SEO = {
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
+<<<<<<< HEAD
       name: 'Baloch Hospitality Customer Panel',
     },
   },
   '/admin': {
     title: 'Admin Panel | Baloch Hospitality',
+=======
+      name: 'Baloch Restaurant Customer Panel',
+    },
+  },
+  '/admin': {
+    title: 'Admin Panel | Baloch Restaurant',
+>>>>>>> origin/main
     description:
       'View a structured admin dashboard for orders, reservations, contact messages, status updates, and menu insights.',
     keywords:
@@ -158,7 +203,11 @@ const ROUTE_SEO = {
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
+<<<<<<< HEAD
       name: 'Baloch Hospitality Admin Panel',
+=======
+      name: 'Baloch Restaurant Admin Panel',
+>>>>>>> origin/main
     },
   },
 };

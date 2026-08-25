@@ -9,6 +9,7 @@ const MenuPage = () => {
   return (
     <section className="section page-shell">
       <div className="container page-intro page-intro--menu">
+<<<<<<< HEAD
         <p className="eyebrow">Baloch Restaurant menu</p>
         <h1 className="page-title">Pakistani favourites, family meals, and Balochi specialties.</h1>
         <p className="page-description">
@@ -30,6 +31,15 @@ const MenuPage = () => {
         showCategoryFilter
       />
 
+=======
+        <p className="eyebrow">Full catalog</p>
+        <h1 className="page-title">Explore more than one hundred dishes commonly served across Pakistani restaurant menus.</h1>
+        <p className="page-description">
+          Search, filter, and sort a much larger catalog covering grills, curries, biryani, breakfast, desserts, drinks, fusion plates, and delivery bundles.
+        </p>
+      </div>
+
+>>>>>>> origin/main
       <div className="container showcase-grid showcase-grid--compact page-metrics-grid">
         <article className="showcase-card">
           <h3>{menuInsights.totalDishes}</h3>
@@ -52,10 +62,31 @@ const MenuPage = () => {
       <CategorySpotlightGrid
         items={categoryShowcase}
         eyebrow="Category overview"
+<<<<<<< HEAD
         title="Explore every part of the kitchen."
         description="See the full range of categories and their signature dishes after you have found something to order."
         compact
       />
+=======
+        title="A broader catalog built like a real menu system instead of one long static section."
+        description="Each category has its own visual identity, pricing entry point, and service role so guests can browse faster."
+        compact
+      />
+
+      <MenuSection
+        menuItems={menuItems}
+        onAddToCart={addToCart}
+        onToggleFavorite={toggleFavorite}
+        favoriteIds={favorites}
+        introEyebrow="Browse dishes"
+        introTitle="Built for bigger restaurant browsing and faster add-to-cart decisions."
+        introDescription="Use the filters to find breakfast items, delivery deals, BBQ platters, and everyday comfort dishes in one place."
+        ctaLabel="Go to delivery"
+        ctaTo="/delivery"
+        showSearch
+        showCategoryFilter
+      />
+>>>>>>> origin/main
     </section>
   );
 };

@@ -80,7 +80,6 @@ export function fetchContactMessages(signal) {
     signal,
   });
 }
-
 export function fetchRooms(signal) {
   return requestJson('/api/rooms', { method: 'GET', signal });
 }
