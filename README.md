@@ -2,6 +2,8 @@
 
 ![Restaurant Website](https://kamran1272.github.io/portfolio/images/projects/restaurant.png)
 
+> 🌐 **Live demo:** https://kamran1272.github.io/restaurant-website/
+
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)
